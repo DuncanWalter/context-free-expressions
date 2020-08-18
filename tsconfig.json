@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "strict": true,
+    "lib": ["ES2018"],
+    "target": "esnext",
+    "moduleResolution": "node",
+    "module": "esnext",
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": ["packages/*/src/**/*"],
+  "exclude": ["node_modules"]
+}
