@@ -1,7 +1,5 @@
 {
-    "name": "rhizome",
     "version": "0.0.1",
-    "main": "index.js",
     "private": true,
     "devDependencies": {
         "@babel/cli": "7.10.5",
@@ -31,7 +29,6 @@
     },
     "scripts": {
         "test": "lerna run build && lerna run test",
-        "publish": "lerna publish from-package",
         "lint": "eslint . --ext .js,.ts,.tsx"
     },
     "workspaces": [

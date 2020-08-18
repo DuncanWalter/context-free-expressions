@@ -17,19 +17,18 @@ const arbitrary = objectShape({
   }),
 })
 
-const foo = transform(
-  {
-    green: 'green',
-    blue: [4, 4, 5],
-    red: {
-      crimson: true,
-      brick: 5,
-    },
-  },
-  arbitrary,
-)
-
 test('foo', () => {
+  const foo = transform(
+    {
+      green: 'green',
+      blue: [4, 4, 5],
+      red: {
+        crimson: true,
+        brick: 5,
+      },
+    },
+    arbitrary,
+  )
   console.log(foo)
   console.log(foo.get(info))
   console.log(foo.get(numeric))
